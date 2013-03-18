@@ -1,7 +1,7 @@
 mediaQuery
 ==========
 
-Media query plug-in for jQuery - responsive made easy. Adds a class to each selected element equal to the key of any matching media query. 
+Media query plug-in for jQuery. Responsive design made easy. Adds a class to each selected element equal to the key of any matching media query. 
 
 
 ***Usage:***
