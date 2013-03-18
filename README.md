@@ -18,4 +18,4 @@ $(document).ready(function(){
 })
 ```
 
-If using < IE10 then include the polyfill for matchMedia here:
+If using < IE10 then include the polyfill for matchMedia here: https://github.com/jameswestgate/Responsive
