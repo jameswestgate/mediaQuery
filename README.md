@@ -1,11 +1,13 @@
 mediaQuery
 ==========
 
-Media query plug-in for jQuery - responsive made easy.
+Media query plug-in for jQuery - responsive made easy. If using < IE10 then include the polyfill for matchMedia here:
 
-Usage: 
 
-'''javascript
+
+***Usage:***
+
+```javascript
 
   //Set up media query classes
   $('body').mediaQuery({queries: {
@@ -15,4 +17,4 @@ Usage:
   	w1024: 'only screen and (min-width: 1024px)'
   }});
       
-'''
+```
