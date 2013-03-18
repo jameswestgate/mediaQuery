@@ -1,8 +1,7 @@
 mediaQuery
 ==========
 
-Media query plug-in for jQuery - responsive made easy. If using < IE10 then include the polyfill for matchMedia here:
-
+Media query plug-in for jQuery - responsive made easy. Adds a class to each selected element equal to the key of any matching media query. 
 
 
 ***Usage:***
@@ -18,3 +17,5 @@ Media query plug-in for jQuery - responsive made easy. If using < IE10 then incl
   }});
       
 ```
+
+If using < IE10 then include the polyfill for matchMedia here:
