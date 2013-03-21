@@ -1,0 +1,51 @@
+
+<!doctype html>
+<!--[if IE 8]> <html class="no-js ie8" lang="en"> <![endif]-->
+<!--[if IE 9]> <html class="no-js ie9" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	
+	<title>Simple mediaQuery plug-in example</title>
+
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body class="w320">
+
+	<section class="content">     
+		<p>no script</p>
+	</section>
+
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script src="../mediaQuery.min.js"></script>
+	<script>
+
+		$(document).ready(function(){
+			
+			$('html').removeClass('no-js');
+
+			var queries = {
+				w320: 'only screen and (min-width: 320px)',
+				w480: 'only screen and (min-width: 480px)',
+				w768: 'only screen and (min-width: 768px)',
+				w1024: 'only screen and (min-width: 1024px)'
+			});
+
+			var $body = $('body'), $p = $('.content p');
+
+			$body.mediaQuery(queries, function() {
+
+				if ($body.hasClass('w320')) $p.text('320px');
+				if ($body.hasClass('w480')) $p.text('480px');
+				if ($body.hasClass('w768')) $p.text('768px');
+				if ($body.hasClass('w1024')) $p.text('1024px');
+			}
+		})
+
+	</script>
+
+</body>
+</html>
