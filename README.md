@@ -2,6 +2,8 @@ mediaQuery
 ==========
 
 Plug-in for jQuery that adds a class to each selected element equal to the key of any matching media query. 
+Also acts as a polyfill for media queries, _matchMedia_ and _addEventListener_ javascript functions.
+
 
 
 ***Usage:***
@@ -17,8 +19,6 @@ $(document).ready(function(){
 	});
 })
 ```
-
-Plug-in adds support for css media queries and matchMedia functionality automatically - no other polyfills or libraries required.
 
 ***Example:***
 
