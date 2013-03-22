@@ -19,3 +19,7 @@ $(document).ready(function(){
 ```
 
 Plug-in adds support for css media queries and matchMedia functionality automatically - no other polyfills or libraries required.
+
+***Example:***
+
+http://jameswestgate.github.com/mediaQuery/examples/
