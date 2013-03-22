@@ -287,22 +287,21 @@
 /* Now create the jQuery plugin to utilise all this goodness */
 (function($){
 		
-	$.fn.mediaQuery = function(){
+	$.fn.mediaQuery = function(queries, callback){
 		
 		var $this = $(this);
-		var callback = typeof(arguments[1] === 'function');
 			
-		for (var key in arguments[0]) {
+		for (var key in queries) {
 			
 			var mq = window.matchMedia(queries[key]);
 			
 			(function(key) {
 				mq.addListener(function(mql) {
 					(mql.matches) ? $this.addClass(key) : $this.removeClass(key);
-					if (callback) arguments[1](mql);
+					if (callback) callback(mql, key);
 				});
 				(mq.matches) ? $this.addClass(key) : $this.removeClass(key);
-				if (callback) arguments[1](mq);
+				if (callback) callback(mq, key);
 			})(key);
 		}	
 		
