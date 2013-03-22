@@ -21,7 +21,7 @@
         {
             "type": "GPL-3.0",
             "url": "http://opensource.org/licenses/GPL-3.0"
-        },
+        }
     ],
     "bugs": "https://github.com/jameswestgate/mediaQuery/issues",
     "homepage": "https://github.com/jameswestgate/mediaQuery/",
