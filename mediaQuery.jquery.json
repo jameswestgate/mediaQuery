@@ -3,7 +3,7 @@
     "title": "mediaQuery plug-in",
     "description": "jQuery plugin for simple responsive web development.",
     "keywords": [
-        "media query",
+        "mediaquery",
         "responsive",
         "addEventListener",
         "matchMedia"
